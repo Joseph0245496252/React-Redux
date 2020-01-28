@@ -4,12 +4,12 @@ import { combineReducers, createStore } from 'redux';
     // action.js
 
 export const activateAwesomeness = awesomeness => ({
-    type: 'ACTIVATE AWESOMENESS',
-    payload: awesomeness
+    type: 'ACTIVATE_AWESOMENESS',
+    awesomeness
 })  // action for activating awesomess text
 
 export const closeAwesomeness = () => ({
-    type: 'CLOSE AWESOMENESS'
+    type: 'CLOSE_AWESOMENESS'
 }) // activating for deactivating awesomeness text
 
 
@@ -19,7 +19,7 @@ export const awesomeness = (state= {}, action) => {
     switch (action.type) {
         case 'ACTIVATE_AWESOMENESS':
             return action.awesomeness;
-        case 'CLOSE_AWSOMENESS':
+        case 'CLOSE_AWESOMENESS':
             return {};
         default:
             return state;

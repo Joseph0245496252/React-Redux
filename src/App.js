@@ -8,7 +8,7 @@ function App(props) {
       <h1>{props.awesomeness.title || "Hello World!"}</h1>
 
       {props.awesomeness.title ? (
-        <button> onClick={props.closeAwesomeness}close awesomeness</button>
+        <button onClick={props.closeAwesomeness}>close awesomeness</button>
       ): (
         <button
           onClick={() => 
